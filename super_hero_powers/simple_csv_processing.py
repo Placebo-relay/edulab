@@ -43,7 +43,7 @@ for pair in ability_combinations:
 # del abilities_data
 
 # Reading top-10 from dictionary
-top_10_ability_pairs = pd.Series(ability_pair_counts).nlargest(10).rename(
+top_10_ability_pairs = pd.Series(ability_pair_counts).nlargest(10)
 
 # Getting top-10 ability pairs to CSV
 top_10_ability_pairs.to_csv(
