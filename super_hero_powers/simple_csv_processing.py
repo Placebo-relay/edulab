@@ -84,7 +84,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 st.title('CSV Analysis')
 
 # Display the original CSV data
-st.header('Superhero Powers Data')
+st.header('📑Superhero Powers')
 original_data = pd.read_csv(
     "super_hero_powers/super_hero_powers.csv",
     true_values=["True"],
@@ -126,7 +126,7 @@ st.dataframe(
 )
 
 # Allow users to download the top 10 ability pairs as a CSV file
-st.markdown("### ⬇️Download Top 10 Ability Pairs)
+st.markdown("### ⬇️Download Top 10 Ability Pairs")
 csv = top_10_ability_pairs.to_csv()
 st.download_button(
     label="Download CSV",
