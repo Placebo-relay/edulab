@@ -63,6 +63,16 @@ data[["hero_names", "ability_count"]].to_csv(
 # Create the Streamlit app
 st.title('Superhero Powers Analysis')
 
+# Display the original CSV data
+st.header('Original Superhero Powers Data')
+original_data = pd.read_csv(
+    "super_hero_powers/super_hero_powers.csv",
+    true_values=["True"],
+    false_values=["False"],
+)
+
+st.write(original_data)
+
 # Display the top 10 ability pairs
 st.write("Top 10 Ability Pairs:")
 st.write(top_10_ability_pairs)
