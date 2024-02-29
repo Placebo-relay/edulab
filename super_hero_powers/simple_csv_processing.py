@@ -77,11 +77,18 @@ original_data["hero_abilities"] = original_data.iloc[:, 1:].apply(
 
 original_data["ability_count"] = data["ability_count"]
 
-st.dataframe(original_data[["hero_names", "ability_count", "hero_abilities"]])
+st.dataframe(original_data[["hero_names", "ability_count", "hero_abilities"]], hide_index=True)
 
 # Display the top 10 ability pairs
 st.write("Top 10 Ability Pairs:")
-st.write(top_10_ability_pairs)
+st.dataframe(top_10_ability_pairs, column_config={
+        "": "Power-pair",
+        "0": st.column_config.NumberColumn(
+            "Power-pair count",
+            help="Number of heroes with these two powers",
+            format="%d 🦸‍♂️",
+        ),
+    })
 
 # Allow users to download the top 10 ability pairs as a CSV file
 st.markdown("### Download Top 10 Ability Pairs as CSV")
