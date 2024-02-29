@@ -81,10 +81,10 @@ footer {
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 # Create the Streamlit app
-st.title('Superhero Powers Analysis')
+st.title('CSV Analysis')
 
 # Display the original CSV data
-st.header('Original Superhero Powers Data')
+st.header('Superhero Powers Data')
 original_data = pd.read_csv(
     "super_hero_powers/super_hero_powers.csv",
     true_values=["True"],
@@ -112,7 +112,7 @@ st.dataframe(
 )
 
 # Display the top 10 ability pairs
-st.write("## 🏆Top-10 💪&⚡Ability Pairs:")
+st.write("## 🏆Top-10 💪&⚡Power-Pair")
 st.dataframe(
     top_10_ability_pairs,
     column_config={
@@ -126,7 +126,7 @@ st.dataframe(
 )
 
 # Allow users to download the top 10 ability pairs as a CSV file
-st.markdown("### ⬇️Download Top 10 Ability Pairs as CSV")
+st.markdown("### ⬇️Download Top 10 Ability Pairs)
 csv = top_10_ability_pairs.to_csv()
 st.download_button(
     label="Download CSV",
@@ -136,7 +136,7 @@ st.download_button(
 )
 
 # Display the abilities per hero count
-st.write("## 🦸‍♂️🦸‍♀️🦹‍♂️Heroes per 💪Ability Count:")
+st.write("## 🦸‍♂️🦸‍♀️🦹‍♂️Heroes per 💪Ability")
 st.dataframe(
     abilities_data.sum(),
     column_config={
@@ -150,7 +150,7 @@ st.dataframe(
 )
 
 # Allow users to download the abilities per hero count as a CSV file
-st.markdown("### ⬇️Download Heroes per Ability as CSV")
+st.markdown("### ⬇️Download Heroes per Ability")
 csv = data[["hero_names", "ability_count"]].to_csv(index=False)
 st.download_button(
     label="Download CSV",
@@ -160,7 +160,7 @@ st.download_button(
 )
 
 # Display the abilities per hero count
-st.write("## 💪⚡🛡️Abilities per 🦸‍♂️Hero Count:")
+st.write("## 💪⚡🛡️Abilities per 🦸‍♂️Hero")
 st.dataframe(
     data[["hero_names", "ability_count"]],
     hide_index=True,
@@ -174,7 +174,7 @@ st.dataframe(
     },
 )
 # Allow users to download the abilities per hero count as a CSV file
-st.markdown("### ⬇️Download Abilities per Hero Count as CSV")
+st.markdown("### ⬇️Download Abilities per Hero")
 csv = data[["hero_names", "ability_count"]].to_csv(index=False)
 st.download_button(
     label="Download CSV",
