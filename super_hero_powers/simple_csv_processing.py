@@ -64,6 +64,32 @@ data[["hero_names", "ability_count"]].to_csv(
     "abilities_per_hero_count.csv", index=False
 )
 
+# Add custom CSS to hide the GitHub button
+hide_menu = """
+<style>
+header {
+    visibility: hidden;
+}
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: visible;
+}
+footer:after{
+    visibility: visible;
+    Content:"Demo for CSV processing. Copyright @ 2024";
+    display: block;
+    position: relative;
+    padding: 5px;
+    top:3px;
+    color: tomato;
+    text-align: left;
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
+
 # Create the Streamlit app
 st.title('Superhero Powers Analysis')
 
