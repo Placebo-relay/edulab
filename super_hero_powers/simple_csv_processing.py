@@ -126,7 +126,7 @@ st.dataframe(
     column_config={
         "": "Ability",
         "0": st.column_config.NumberColumn(
-            "Power-pair count",
+            "Ability count",
             help="Number of heroes with this power",
             format="%d 🦸‍♂️",
         ),
