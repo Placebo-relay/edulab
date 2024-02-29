@@ -14,7 +14,9 @@ import streamlit as st
 
 # Load the data from the CSV file into a pandas DataFrame
 data = pd.read_csv(
-    "super_hero_powers.csv", true_values=["True"], false_values=["False"]
+    "super_hero_powers/super_hero_powers.csv",
+    true_values=["True"],
+    false_values=["False"],
 )
 
 # Dropping names for heroes per each ability count
