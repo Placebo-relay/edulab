@@ -76,16 +76,6 @@ header {
 
 footer {
     visibility: visible;
-}
-footer:after{
-    visibility: visible;
-    Content:"Demo for CSV processing. Copyright @ 2024";
-    display: block;
-    position: relative;
-    padding: 5px;
-    top:3px;
-    color: tomato;
-    text-align: left;
 </style>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
