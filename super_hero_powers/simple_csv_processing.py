@@ -101,7 +101,7 @@ st.dataframe(
     top_10_ability_pairs,
     column_config={
         "ability_pair": "Power-pair",
-        "ability_pair_count": st.column_config.NumberColumn(
+        "ability_pair_total": st.column_config.NumberColumn(
             "Power-pair count",
             help="Number of heroes with these two powers",
             format="%d 🦸‍♂️",
