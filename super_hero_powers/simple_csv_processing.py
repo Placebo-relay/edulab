@@ -71,11 +71,11 @@ original_data = pd.read_csv(
     false_values=["False"],
 )
 
-original_data["Abilities"] = original_data.iloc[:, 1:].apply(
+original_data["hero_abilities"] = original_data.iloc[:, 1:].apply(
     lambda x: ", ".join(x.index[x]), axis=1
 )
 
-st.write(original_data)
+st.write(original_data[["hero_names", "hero_abilities"]])
 
 # Display the top 10 ability pairs
 st.write("Top 10 Ability Pairs:")
