@@ -40,7 +40,7 @@ for pair in ability_combinations:
     ability_pair_counts[pair_name] = pair_count
 
 # Freeing some memory
-del abilities_data
+# del abilities_data
 
 # Reading top-10 from dictionary
 top_10_ability_pairs = pd.Series(ability_pair_counts).nlargest(10)
@@ -75,6 +75,8 @@ original_data["hero_abilities"] = original_data.iloc[:, 1:].apply(
     lambda x: ", ".join(x.index[x]), axis=1
 )
 
+original_data["ability_count"] = data["ability_count"]
+
 st.write(original_data[["hero_names", "hero_abilities"]])
 
 # Display the top 10 ability pairs
@@ -90,6 +92,10 @@ st.download_button(
     file_name='top_10_ability_pairs.csv',
     mime='text/csv'
 )
+
+# Display the abilities per hero count
+st.write("Abilities per Hero Count:")
+st.write(data[["hero_names", "ability_count"]])
 
 # Display the abilities per hero count
 st.write("Abilities per Hero Count:")
