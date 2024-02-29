@@ -35,7 +35,7 @@ ability_combinations = list(combinations(abilities_data.columns, 2))
 # Pairs to dictionary
 ability_pair_counts = {}
 for pair in ability_combinations:
-    pair_name = f"{pair[0]}_and_{pair[1]}"
+    pair_name = f"{pair[0]} & {pair[1]}"
     pair_count = (abilities_data[pair[0]] & abilities_data[pair[1]]).sum()
     ability_pair_counts[pair_name] = pair_count
 
@@ -91,7 +91,7 @@ st.dataframe(top_10_ability_pairs, column_config={
     })
 
 # Allow users to download the top 10 ability pairs as a CSV file
-st.markdown("### Download Top 10 Ability Pairs as CSV")
+st.markdown("### ⬇️Download Top 10 Ability Pairs as CSV")
 csv = top_10_ability_pairs.to_csv()
 st.download_button(
     label="Download CSV",
@@ -101,15 +101,25 @@ st.download_button(
 )
 
 # Display the abilities per hero count
-st.write("Abilities per Hero Count:")
+st.write("Heroes per Ability Count:")
 st.write(abilities_data.sum())
 
+# Allow users to download the abilities per hero count as a CSV file
+st.markdown("### ⬇️Download Heroes per Ability as CSV")
+csv = data[["hero_names", "ability_count"]].to_csv(index=False)
+st.download_button(
+    label="Download CSV",
+    data=csv,
+    file_name='heroes_per_ability.csv',
+    mime='text/csv'
+)
+
 # Display the abilities per hero count
-st.write("Abilities per Hero Count:")
+st.write("Heroes per Ability Count:")
 st.write(data[["hero_names", "ability_count"]])
 
 # Allow users to download the abilities per hero count as a CSV file
-st.markdown("### Download Abilities per Hero Count as CSV")
+st.markdown("### ⬇️Download Abilities per Hero Count as CSV")
 csv = data[["hero_names", "ability_count"]].to_csv(index=False)
 st.download_button(
     label="Download CSV",
