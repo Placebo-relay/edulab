@@ -92,7 +92,7 @@ st.dataframe(
 )
 
 # Display the top 10 ability pairs
-st.write("Top 10 Ability Pairs:")
+st.write("## Top 10 Ability Pairs:")
 st.dataframe(
     top_10_ability_pairs,
     column_config={
@@ -116,8 +116,18 @@ st.download_button(
 )
 
 # Display the abilities per hero count
-st.write("Heroes per Ability Count:")
-st.write(abilities_data.sum())
+st.write("## 🦸‍♂️Heroes per Ability Count:")
+st.dataframe(
+    abilities_data.sum(),
+    column_config={
+        "": "Ability",
+        "0": st.column_config.NumberColumn(
+            "Power-pair count",
+            help="Number of heroes with this power",
+            format="%d 🦸‍♂️",
+        ),
+    },
+)
 
 # Allow users to download the abilities per hero count as a CSV file
 st.markdown("### ⬇️Download Heroes per Ability as CSV")
@@ -130,9 +140,19 @@ st.download_button(
 )
 
 # Display the abilities per hero count
-st.write("Heroes per Ability Count:")
-st.write(data[["hero_names", "ability_count"]])
-
+st.write("## 💪Abilities per Hero Count:")
+st.dataframe(
+    data[["hero_names", "ability_count"]],
+    hide_index=True,
+    column_config={
+        "hero_names": "Hero",
+        "ability_count": st.column_config.NumberColumn(
+            "Ability count",
+            help="Number of abilities that hero has",
+            format="%d 💪",
+        ),
+    },
+)
 # Allow users to download the abilities per hero count as a CSV file
 st.markdown("### ⬇️Download Abilities per Hero Count as CSV")
 csv = data[["hero_names", "ability_count"]].to_csv(index=False)
