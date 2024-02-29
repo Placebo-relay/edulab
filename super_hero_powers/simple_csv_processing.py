@@ -44,6 +44,8 @@ for pair in ability_combinations:
 
 # Reading top-10 from dictionary
 top_10_ability_pairs = pd.Series(ability_pair_counts).nlargest(10)
+top_10_ability_pairs.index.name = 'ability_pair'
+top_10_ability_pairs.name = 'ability_pair_total'
 
 # Getting top-10 ability pairs to CSV
 top_10_ability_pairs.to_csv(
