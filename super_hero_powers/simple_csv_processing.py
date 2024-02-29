@@ -75,7 +75,7 @@ st.write(original_data)
 
 # Display the top 10 ability pairs
 st.write("Top 10 Ability Pairs:")
-st.write(top_10_ability_pairs)
+st.write("super_hero_powers/top_10_ability_pairs.csv")
 
 # Allow users to download the top 10 ability pairs as a CSV file
 st.markdown("### Download Top 10 Ability Pairs as CSV")
