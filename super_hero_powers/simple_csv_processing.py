@@ -72,7 +72,7 @@ original_data = pd.read_csv(
 )
 
 original_data["Abilities"] = original_data.iloc[:, 1:].apply(
-    lambda x: ",".join(x.index[x]), axis=1
+    lambda x: ", ".join(x.index[x]), axis=1
 )
 
 st.write(original_data)
