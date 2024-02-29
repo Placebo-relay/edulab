@@ -52,7 +52,7 @@ top_10_ability_pairs.to_csv(
     index_label="ability_pair",
 )
 
-top_10_ability_pairs.index = ['ability_pair', 'ability_pair_count']
+# top_10_ability_pairs.index = ['ability_pair', 'ability_pair_count']
     
 # Getting abilitues per each hero count
 data["ability_count"] = data.iloc[:, 1:].sum(axis=1)
