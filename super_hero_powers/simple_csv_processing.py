@@ -77,7 +77,7 @@ original_data["hero_abilities"] = original_data.iloc[:, 1:].apply(
 
 original_data["ability_count"] = data["ability_count"]
 
-st.write(original_data[["hero_names", "ability_count", "hero_abilities"]])
+st.write(original_data[["hero_names", "ability_count", "hero_abilities"]], index=False)
 
 # Display the top 10 ability pairs
 st.write("Top 10 Ability Pairs:")
