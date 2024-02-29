@@ -95,7 +95,7 @@ st.download_button(
 
 # Display the abilities per hero count
 st.write("Abilities per Hero Count:")
-st.write(data[["hero_names", "ability_count"]])
+st.write(abilities_data.sum())
 
 # Display the abilities per hero count
 st.write("Abilities per Hero Count:")
