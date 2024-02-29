@@ -96,7 +96,7 @@ st.dataframe(
 )
 
 # Display the top 10 ability pairs
-st.write("## Top 10 Ability Pairs:")
+st.write("## 🏆Top-10 💪&⚡Ability Pairs:")
 st.dataframe(
     top_10_ability_pairs,
     column_config={
@@ -120,7 +120,7 @@ st.download_button(
 )
 
 # Display the abilities per hero count
-st.write("## 🦸‍♂️Heroes per Ability Count:")
+st.write("## 🦸‍♂️🦸‍♀️🦹‍♂️Heroes per 💪Ability Count:")
 st.dataframe(
     abilities_data.sum(),
     column_config={
@@ -144,7 +144,7 @@ st.download_button(
 )
 
 # Display the abilities per hero count
-st.write("## 💪Abilities per Hero Count:")
+st.write("## 💪⚡🛡️Abilities per 🦸‍♂️Hero Count:")
 st.dataframe(
     data[["hero_names", "ability_count"]],
     hide_index=True,
