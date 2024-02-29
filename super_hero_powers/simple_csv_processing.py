@@ -136,7 +136,7 @@ st.download_button(
 )
 
 # Display the abilities per hero count
-st.write("## 🦸‍♂️🦸‍♀️🦹‍♂️Heroes per 💪Ability")
+st.write("## 🦸‍♂️🦹‍♂️Heroes per 💪Ability")
 st.dataframe(
     abilities_data.sum(),
     column_config={
