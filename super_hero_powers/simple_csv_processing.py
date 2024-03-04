@@ -88,9 +88,10 @@ links = {
     "🚀Streamlit's official site": "https://www.streamlit.io",
     "🐙Jupyter's Github": "https://github.com/jupyter",
     "🌐Jupyter's official site": "https://jupyter.org/",
+    "🐙🌐Example: github + jupyter": "https://github.com/hukenovs/dsp-theory/tree/master"
     "🐍WinPython": "https://winpython.github.io/",
-    "🧪My Google Colab": "https://colab.research.google.com/drive/1KRNDUU2lZpnA1BsovOX7Le8TaZAfNRdp?usp=sharing#scrollTo=4lA0w8FpZMf-",
-    "🔗My Binder": "https://github.com",
+    "🧪🌐My Google Colab": "https://colab.research.google.com/drive/1KRNDUU2lZpnA1BsovOX7Le8TaZAfNRdp?usp=sharing#scrollTo=4lA0w8FpZMf-",
+    "🔗🌐My Binder": "https://github.com",
 } 
 
 # Display the links in a list format
