@@ -83,6 +83,8 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 # Create the Streamlit app
 st.title('CSV Analysis')
 
+st.markdown("[Link to Google](https://www.google.com)")
+
 # Display the original CSV data
 st.header('📑Superhero Powers')
 original_data = pd.read_csv(
