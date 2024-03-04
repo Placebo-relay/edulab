@@ -85,13 +85,11 @@ st.title('CSV Analysis + Jupyter report')
 
 # List of links
 links = {
-    "🚀Streamlit": "https://www.streamlit.io",
-    ":octocat:Jupyter's Github": "https://github.com/jupyter",
+    "🚀Streamlit's official site": "https://www.streamlit.io",
+    "🐙Jupyter's Github": "https://github.com/jupyter",
     "🌐Jupyter's official site": "https://jupyter.org/",
-    "🧪My Google Colab": "https://colab.research.google.com/drive/1KRNDUU2lZpnA1BsovOX7Le8TaZAfNRdp?usp=sharing#scrollTo=4lA0w8FpZMf-",
-    "GitHub": "https://github.com",
-    "🐍Python": "https://www.python.org",
-    "Streamlit": "https://www.streamlit.io"
+    "🧪🐍My Google Colab": "https://colab.research.google.com/drive/1KRNDUU2lZpnA1BsovOX7Le8TaZAfNRdp?usp=sharing#scrollTo=4lA0w8FpZMf-",
+    "My Binder": "https://github.com",
 } 
 
 # Display the links in a list format
