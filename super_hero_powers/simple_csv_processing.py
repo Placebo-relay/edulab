@@ -97,7 +97,7 @@ links = {
 # Display the links in a list format
 st.markdown("### Useful Links:")
 for name, link in links.items():
-    st.markdown(f"- [{name}]({link})")
+    st.write(f"- [{name}]({link})")
 
 
 # Display the original CSV data
