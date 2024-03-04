@@ -81,9 +81,14 @@ footer {
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 # Create the Streamlit app
-st.title('CSV Analysis')
+st.title('Streamlit CSV Analysis + Jupyter report')
 
-st.markdown("[Link to Google](https://www.google.com)")
+st.write('# Jupyter Links')
+
+st.markdown(
+    "[Link to Google Colab](https://colab.research.google.com/drive/1KRNDUU2lZpnA1BsovOX7Le8TaZAfNRdp?usp=sharing#scrollTo=4lA0w8FpZMf-)"
+)
+
 
 # Display the original CSV data
 st.header('📑Superhero Powers')
