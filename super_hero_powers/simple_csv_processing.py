@@ -83,11 +83,23 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 # Create the Streamlit app
 st.title('CSV Analysis + Jupyter report')
 
+# List of links
+links = {
+    "Google Colab": "https://www.google.com",
+    "Google Colab": "https://www.google.com",
+    "Google Colab": "https://colab.research.google.com/drive/1KRNDUU2lZpnA1BsovOX7Le8TaZAfNRdp?usp=sharing#scrollTo=4lA0w8FpZMf-",
+    "Google Colab": "https://www.google.com",
+    "GitHub": "https://github.com",
+    "Python": "https://www.python.org",
+    "Streamlit": "https://www.streamlit.io"
+}
+
 st.write('# Jupyter Links')
 
-st.markdown(
-    "[Link to Google Colab](https://colab.research.google.com/drive/1KRNDUU2lZpnA1BsovOX7Le8TaZAfNRdp?usp=sharing#scrollTo=4lA0w8FpZMf-)"
-)
+# Display the links in a list format
+st.markdown("### Useful Links:")
+for name, link in links.items():
+    st.markdown(f"- [{name}]({link})")
 
 
 # Display the original CSV data
