@@ -94,8 +94,6 @@ links = {
     "Streamlit": "https://www.streamlit.io"
 }
 
-st.write('# Jupyter Links')
-
 # Display the links in a list format
 st.markdown("### Useful Links:")
 for name, link in links.items():
