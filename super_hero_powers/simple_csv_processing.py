@@ -92,7 +92,7 @@ links = {
     "🐍WinPython": "https://winpython.github.io/",
     "🧪🌐My Google Colab": "https://colab.research.google.com/drive/1KRNDUU2lZpnA1BsovOX7Le8TaZAfNRdp?usp=sharing#scrollTo=4lA0w8FpZMf-",
     "🧪🌐Example GC": "https://colab.research.google.com/github/hukenovs/dsp-theory/blob/master/src/dsp_theory_1_signals.ipynb",
-    "🔗🌐My Binder": "https://github.com",
+    "🔗🌐Example Binder": "https://mybinder.org/repo/AllenDowney/ThinkDSP",
 } 
 
 # Display the links in a list format
