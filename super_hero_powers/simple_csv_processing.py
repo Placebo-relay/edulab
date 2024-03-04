@@ -81,7 +81,7 @@ footer {
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 # Create the Streamlit app
-st.title('Streamlit CSV Analysis + Jupyter report')
+st.title('CSV Analysis + Jupyter report')
 
 st.write('# Jupyter Links')
 
