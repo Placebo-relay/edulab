@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "export LANG=ru_RU.UTF-8" >> $HOME/.bashrc
-pip install @jupyter-widgets/jupyterlab-manager
-pip install jupyterlab-plotly
-pip install jupyterlab-code-formatter
+
+pip install plotly jupyterlab-plotly
+pip install black isort jupyterlab-code-formatter
