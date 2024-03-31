@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "export LANG=ru_RU.UTF-8" >> $HOME/.bashrc
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install jupyterlab-plotly
 jupyter labextension install jupyterlab-code-formatter
