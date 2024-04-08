@@ -1,5 +1,0 @@
-python
-pandas
-plotly
-black
-isort
