@@ -91,8 +91,6 @@ original_data = pd.read_csv(
     false_values=["False"],
 )
 
-st.
-
 original_data["hero_abilities"] = original_data.iloc[:, 1:].apply(
     lambda x: ", ".join(x.index[x]), axis=1
 )
