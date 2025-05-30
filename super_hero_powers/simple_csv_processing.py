@@ -85,6 +85,9 @@ st.title('CSV Analysis')
 
 # Display the original CSV data
 st.header('📑Superhero Powers')
+st.write('Count heroes per each ability')
+st.write('Get top-10 pairs of abilities')
+st.write('Count abilities per each hero')
 original_data = pd.read_csv(
     "super_hero_powers/super_hero_powers.csv",
     true_values=["True"],
