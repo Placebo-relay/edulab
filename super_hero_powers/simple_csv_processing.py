@@ -131,16 +131,6 @@ st.dataframe(
     },
 )
 
-# Allow users to download the top 10 ability pairs as a CSV file
-st.markdown("### ⬇️Download Top 10 Ability Pairs")
-csv = top_10_ability_pairs.to_csv()
-st.download_button(
-    label="Download CSV",
-    data=csv,
-    file_name='top_10_ability_pairs.csv',
-    mime='text/csv'
-)
-
 # Display the abilities per hero count
 st.write("## 🦸‍♂️🦹‍♂️Heroes per 💪Ability")
 st.dataframe(
@@ -155,15 +145,6 @@ st.dataframe(
     },
 )
 
-# Allow users to download the abilities per hero count as a CSV file
-st.markdown("### ⬇️Download Heroes per Ability")
-csv = data[["hero_names", "ability_count"]].to_csv(index=False)
-st.download_button(
-    label="Download CSV",
-    data=csv,
-    file_name='heroes_per_ability.csv',
-    mime='text/csv'
-)
 
 # Display the abilities per hero count
 st.write("## 💪⚡🛡️Abilities per 🦸‍♂️Hero")
@@ -178,13 +159,4 @@ st.dataframe(
             format="%d 💪",
         ),
     },
-)
-# Allow users to download the abilities per hero count as a CSV file
-st.markdown("### ⬇️Download Abilities per Hero")
-csv = data[["hero_names", "ability_count"]].to_csv(index=False)
-st.download_button(
-    label="Download CSV",
-    data=csv,
-    file_name='abilities_per_hero_count.csv',
-    mime='text/csv'
 )
